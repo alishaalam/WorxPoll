@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alisha.pollerdetails.PollerDetails" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textViewTitle"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginTop="9dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextTitle"
+            android:layout_below="@+id/editTextTitle"
+            android:layout_marginTop="34dp"
+            android:text="@string/event_location"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewLocation"
+            android:layout_below="@+id/textViewLocation"
+            android:layout_marginTop="24dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewOrgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextLocation"
+            android:layout_below="@+id/editTextLocation"
+            android:layout_marginTop="48dp"
+            android:text="@string/organizer_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextOrgName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewOrgName"
+            android:layout_below="@+id/textViewOrgName"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewOrgEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextOrgName"
+            android:layout_below="@+id/editTextOrgName"
+            android:layout_marginTop="36dp"
+            android:text="@string/organizer_email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextOrgEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewOrgEmail"
+            android:layout_below="@+id/textViewOrgEmail"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextOrgEmail"
+            android:layout_marginTop="20dp"
+            android:background="#006dcc"
+            android:gravity="center"
+            android:onClick="onNext"
+            android:text="@string/btn_create_poll" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alisha.host.HostActivity" >
+
+    <item
+        android:id="@+id/add_poll"
+        android:icon="@drawable/fab_ic_add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_create_poll"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_about_app"/>
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_logout"/>
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/poll_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="poll_icon"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/poll_icon" />
+
+    <TextView
+        android:id="@+id/title_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/poll_icon"
+        android:focusable="false"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/organizer_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/title_value"
+        android:layout_below="@id/title_value"
+        android:focusable="false"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

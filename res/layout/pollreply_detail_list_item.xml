@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/event_time_from"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/event_date"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/event_time_to"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/event_time_from"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/invitees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/push_notifications" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="individual_response_preference"
+            android:summary="@string/individual_response_summary"
+            android:title="@string/individual_response_preference" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="all_response_preference"
+            android:summary="@string/all_responses_summary"
+            android:title="@string/all_responses_preference" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
