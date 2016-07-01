@@ -16,7 +16,7 @@ This product allows you to -
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/alishaalam/WorxPoll/blob/master/WorxPoll_Connect_2015_Final.mov' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/alishaalam/WorxPoll/blob/master/WorxPoll_Connect_2015_Final.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## User Stories
 
